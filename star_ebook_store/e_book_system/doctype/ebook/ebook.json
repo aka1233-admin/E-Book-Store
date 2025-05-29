@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2025-05-22 14:19:39.955059",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "image",
+  "file",
+  "route",
+  "is_published",
+  "column_break_vuku",
+  "format",
+  "author",
+  "section_break_topg",
+  "description",
+  "section_break_iuiy",
+  "table_of_contents"
+ ],
+ "fields": [
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "label": "File"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Route"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "format",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Format",
+   "options": "PDF\nuPUB"
+  },
+  {
+   "fieldname": "column_break_vuku",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Author",
+   "options": "Author"
+  },
+  {
+   "fieldname": "section_break_topg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Markdown Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_iuiy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_of_contents",
+   "fieldtype": "Markdown Editor",
+   "label": "Table of Contents"
+  }
+ ],
+ "grid_page_length": 50,
+ "has_web_view": 1,
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2025-05-22 14:40:56.867913",
+ "modified_by": "Administrator",
+ "module": "E-book System",
+ "name": "ebook",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "name",
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
